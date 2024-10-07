@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* 기본 리셋 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 전체 바디 스타일 */
+body {
+  font-family: 'Arial', sans-serif; /* 기본 폰트 설정 */
+  line-height: 1.6; /* 줄 간격 설정 */
+  background-color: #f4f4f4; /* 배경색 설정 */
+  color: #333; /* 글자색 설정 */
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none; /* 링크 밑줄 제거 */
+  color: #0070f3; /* 링크 색상 설정 */
+}
+
+a:hover {
+  text-decoration: underline; /* 링크 호버 시 밑줄 추가 */
+}
+
+/* 헤더 스타일 */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px; /* 헤더 간격 설정 */
+}
+
+/* 카드 스타일 */
+.card {
+  border-radius: 8px; /* 카드 모서리 둥글게 */
+  transition: box-shadow 0.3s; /* 카드 그림자 전환 효과 */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 카드 호버 시 그림자 효과 */
+}
+
+/* styles/globals.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  background-color: #f9f9f9;
+}
